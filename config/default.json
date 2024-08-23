@@ -4,6 +4,6 @@
         "address" : "localhost",
         "port" : 5555,
         "vpncmdPath" : "/opt/softether/vpncmd",
-        "password" : "ServerPasswordSet"
+        "password" : "MyNewStrongPassword"
     }
 }
