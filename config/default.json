@@ -2,7 +2,7 @@
     "serverPort": 8000,
     "softEther" : {
         "address" : "localhost",
-        "port" : 5555,
+        "port" : 443,
         "vpncmdPath" : "/opt/softether/vpncmd",
         "password" : ""
     }
