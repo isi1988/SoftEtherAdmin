@@ -250,7 +250,7 @@ var softEther = {
     assembleCommand: function (softEtherCommand, softEtherCommandParams, hubName, enableCSV, fileName) {
         var command = '';
         // vpncmd executeable
-        command += '"' + global.config.get('softEther.vpncmdPath') + '"';
+        command +=  global.config.get('softEther.vpncmdPath');
         // address:port
         command += ' ' + global.config.get('softEther.address');
         var port = global.config.get('softEther.port');
@@ -263,6 +263,9 @@ var softEther = {
         var pwd = global.config.get('softEther.password');
         if (pwd) {
             command += ' /PASSWORD:' + pwd;
+        } else
+        {
+            command += ' /PASSWORD:none'
         }
         // should the return value be in csv
         if (enableCSV) {
